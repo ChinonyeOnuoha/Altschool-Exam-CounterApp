@@ -1,0 +1,15 @@
+/* errorBoundaryTest.css */
+
+.errorBoundaryTest_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .errorBoundaryTest_text {
+    font-size: 24px;
+    font-weight: normal;
+    color: #FF8944;
+  }
+  

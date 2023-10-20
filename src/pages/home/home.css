@@ -1,0 +1,219 @@
+@import url('https://fonts.cdnfonts.com/css/circula');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: #424F55;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;                                             
+}
+
+
+h1{
+    color: #65FDBD;
+    font-family: Circula;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+
+.counter_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.counter_main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 90%;
+    width: 32rem;
+    height: 40rem;
+    border-radius: 1.25rem;
+    background: rgba(101, 253, 189, 0.20);
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.counter_main_displayScreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    width: 27rem;
+    height: 21.9375rem;
+    margin: 2.5rem 2.5rem 2rem 2.5rem;
+    background: #33504A; 
+}
+
+
+.counter_main_displayScreen_text{
+    color: #FFFfff;
+    font-family: Plus Jakarta Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+
+.counter_main_setValue{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+
+input{
+    display: flex;
+    width: 14.3125rem;
+    height: 2.5rem;
+    padding: 0px 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #65FDBD;
+    background-color: rgba(101, 253, 189, 0.20);
+    color: #FFFfff;
+    font-size: 16px;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .counter_main_content {
+      width: 95%; 
+      max-width:400px; 
+      height: auto;  
+      padding: 20px;  
+    }
+
+    .counter_main_displayScreen{
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+    }
+
+    .counter_main_setValue{
+        margin: 2rem 0;     
+    }
+
+
+    .counter_main_setValue_btn{
+        width: 100%;
+        max-width: 180px;
+    }
+
+    input{
+        width: 60%;
+        max-width: 300px;
+    }
+  }
+
+
+::placeholder{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.counter_main_setValue_btn{
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    background: #65FDBD;
+    width: 106px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.button_container_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.button_container_btn button{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    background: rgba(0, 0, 0, 0.30);
+    color: #65FDBD;
+    font-size: 1.5rem;
+}
+
+
+
+.button_container_btn p{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.error_entry-points{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+
+
+.error_entry-points_links{
+    text-decoration: underline;
+    color: #FF8944;
+    cursor: pointer;
+
+}
