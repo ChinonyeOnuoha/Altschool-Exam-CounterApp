@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+![Counter app image](CounterApp.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Introduction
+The Counter App is a React-based web application that provides a straightforward way to count. It includes features for setting and updating counts, a user-friendly interface, and error handling capabilities.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+**Counting:** The app allows you to increase and decrease a counter with a click of a button.
 
-### `npm start`
+**Custom Value Setting:** You can set the counter to a specific value by entering it in an input field and clicking "Set Value."
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Page Not Found:** There's a "Page Not Found" component for handling routes that do not exist.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Error Handling:** The app uses an error boundary component to catch and display errors to the user. If an error occurs within the app, you'll see a "Something went wrong" message.
 
-### `npm test`
+**Navigation:** You can navigate between the main counter app and the "Page Not Found" page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Demo**
+You can access a live demo of the app at this [Counter-App] https://altschool-exam-counter-app-topaz.vercel.app/
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Styling
+The app is styled using CSS with fonts imported from Google Fonts and CDN fonts. The styling is responsive and adapts to smaller screens as well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Contributing
+Contributions to this project are welcome. If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
