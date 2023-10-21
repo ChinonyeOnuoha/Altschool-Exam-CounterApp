@@ -8,7 +8,9 @@ body{
     height: 100vh;
     width: 100%;
     justify-content: center;
-    align-items: center;                                             
+    align-items:center;
+    margin: 0;
+    padding: 0;                                                
 }
 
 
@@ -27,6 +29,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 
 
@@ -35,9 +38,9 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;  
-    width: 90%;
+    width:80%;
     width: 32rem;
-    height: 40rem;
+    height: auto;
     border-radius: 1.25rem;
     background: rgba(101, 253, 189, 0.20);
     box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
@@ -65,7 +68,9 @@ h1{
     font-weight: 700;
     line-height: normal;
     word-wrap: break-word;
-    white-space: nowrap;
+    white-space: wrap;
+    /* width: 100%; */
+    max-width: 90%;
 }
 
 
@@ -92,38 +97,6 @@ input{
     color: #FFFfff;
     font-size: 16px;
 }
-
-
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-    .counter_main_content {
-      width: 95%; 
-      max-width:400px; 
-      height: auto;  
-      padding: 20px;  
-    }
-
-    .counter_main_displayScreen{
-        width: 100%; 
-        height: auto; 
-        margin: 0; 
-    }
-
-    .counter_main_setValue{
-        margin: 2rem 0;     
-    }
-
-
-    .counter_main_setValue_btn{
-        width: 100%;
-        max-width: 180px;
-    }
-
-    input{
-        width: 60%;
-        max-width: 300px;
-    }
-  }
 
 
 ::placeholder{
@@ -162,6 +135,7 @@ input{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -217,3 +191,61 @@ input{
     cursor: pointer;
 
 }
+
+
+/* Media queries for smaller screens */
+@media (max-width: 650px) {
+
+    h1{
+        font-size: 3rem;
+    }
+
+
+    .counter_main_content {
+      width: 80%; 
+      max-width:360px; 
+      height: auto;  
+      padding: 20px;  
+      
+    }
+
+    .counter_main_displayScreen{
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+    }
+
+
+    .counter_main_setValue{
+        margin: 2rem 0;     
+    }
+
+
+    .counter_main_setValue_btn{
+        width: 70%;
+        max-width: 150px;
+        font-size: .875rem;
+        
+    }
+
+    .button_container{
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    input{
+        width: 100%;
+        max-width: 300px;
+        padding-left: 8px;
+        
+    }
+
+    ::placeholder{
+        font-size: 14px;
+
+    }
+
+    .counter_main_displayScreen_text{
+        font-size: 1.5rem;
+    }
+  }
