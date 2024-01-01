@@ -19,17 +19,25 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    /* padding: 1rem; */
     max-width: 100%;
 }
 
+h1{
+  color: #00c49a;
+  font-family: Circula;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
 
-
-p{
+span{
     color: #00c49a;
     font-family: Plus Jakarta Sans;
     font-size: 24px;
-    font-style: normal;
+    font-style: italic;
     font-weight: 500;
     margin-bottom: 3rem;
 }
@@ -40,7 +48,6 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3.5rem;
     position: relative;
 }
 

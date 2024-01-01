@@ -18,8 +18,8 @@ class ErrorBoundaryTest extends Component {
     if (this.state.hasError) {
       return (
         <div className="errorBoundaryTest_main">
-          <h1>Oops!!!</h1>
-          <p className="errorBoundaryTest_text">Something went wrong</p>
+          <p className="errorBoundaryTest_text"> Oops! Something went wrong</p>
+          <span>Refresh your browser to reload the CounterApp</span>
         </div>
       );
     }

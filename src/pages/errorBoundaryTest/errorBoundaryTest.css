@@ -22,15 +22,17 @@ body{
     font-size: 24px;
     font-weight: normal;
     color: #f4989c;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: wrap;
   }
 
-  h1{
+  span{
     color: #00c49a;
-    font-family: Circula;
-    font-size:3rem;
-    font-style: normal;
-    font-weight:500;
-    line-height: normal;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: wrap;
+    font-style: italic;
 }
 
