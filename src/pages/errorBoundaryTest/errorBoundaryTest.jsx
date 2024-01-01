@@ -1,8 +1,8 @@
-// 
-
-// errorBoundaryTest.jsx
+// ErrorBoundaryTest.jsx
 import React, { Component } from 'react';
-import './errorBoundaryTest.css'; 
+
+import './errorBoundaryTest.css';
+
 
 class ErrorBoundaryTest extends Component {
   constructor(props) {
@@ -12,18 +12,18 @@ class ErrorBoundaryTest extends Component {
 
   componentDidCatch(error, errorInfo) {
     this.setState({ hasError: true });
-    console.error('Error:', error, errorInfo);
   }
-
+  
   render() {
     if (this.state.hasError) {
       return (
         <div className="errorBoundaryTest_main">
+          <h1>Oops!!!</h1>
           <p className="errorBoundaryTest_text">Something went wrong</p>
         </div>
-        
       );
     }
+
     return this.props.children;
   }
 }

@@ -35,6 +35,12 @@ function useCounter(defaultValue = 0) {
   };
 }
 
+// Component that throws an error
+const ErrorTrigger = () => {
+  throw new Error('Intentional Error');
+};
+
+
 const Home = () => {
 
   const {
@@ -58,6 +64,9 @@ const Home = () => {
       setValue(numericValue);
     }
   };
+
+   // State to control the rendering of the ErrorTrigger component
+   const [showErrorTrigger, setShowErrorTrigger] = useState(false);
 
   return (
     <div className='counter_main'>
@@ -85,17 +94,17 @@ const Home = () => {
         <div className='button_container'>
 
           <div className='button_container_btn'>
-            <button onClick={minus}> <FontAwesomeIcon icon={faMinus}/>  </button>
+            <button onClick={minus} style={{ color: '#FF5630', backgroundColor: '#FFBDAD' }} > <FontAwesomeIcon icon={faMinus}/>  </button>
             <p>Minus</p>
           </div>
 
           <div className='button_container_btn'>
-            <button onClick={reset}> <FontAwesomeIcon icon={faArrowsRotate} /> </button>
+            <button onClick={reset} style={{ color: '#1BAD6F', backgroundColor: '#ABF5D1' }}> <FontAwesomeIcon icon={faArrowsRotate} /> </button>
             <p>Refresh</p>
           </div>
 
           <div className='button_container_btn'>
-            <button onClick={plus}> <FontAwesomeIcon icon={faPlus}/> </button>
+            <button onClick={plus} style={{ color: '#FF8B00', backgroundColor: '#FFF0B3' }} > <FontAwesomeIcon icon={faPlus}/> </button>
             <p>Plus</p>
           </div>
 
@@ -104,7 +113,16 @@ const Home = () => {
         <div className='error_entry-points'>
           <Link to="/page-not-found" className='error_entry-points_links'>Go to Page Not Found</Link>
         </div>
-    </div>
+
+        {/* Link to trigger the error */}
+        <div className='error_entry-points'>
+          <Link to="/" onClick={() => setShowErrorTrigger(true)}  className='error_entry-points_links'>
+            Trigger Error
+          </Link>
+        </div>
+        {/* Conditionally render the ErrorTrigger component */}
+        {showErrorTrigger && <ErrorTrigger />}
+      </div>
   )
 }
 

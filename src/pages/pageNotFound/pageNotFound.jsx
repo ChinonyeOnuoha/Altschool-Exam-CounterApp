@@ -11,7 +11,7 @@ import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 const PageNotFound = () => {
   return (
     <div className='pageNotFound_main'>
-      <p>Oops! page not found</p>
+      <h1>Page not found</h1>
 
       <div className='pageNotFound_main_imgs'>
         <div className='pageNotFound_main_imgs_one'>
@@ -22,6 +22,7 @@ const PageNotFound = () => {
           <img src="/error illustration.svg" alt="Error Illustration" />
         </div>
       </div>
+      <p>The page you are looking for does not exist</p>
 
       
         {/* Use the Link component to navigate to the home page */}

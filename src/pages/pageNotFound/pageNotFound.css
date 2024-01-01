@@ -3,7 +3,7 @@
 
 
 body{
-    background-color: #424F55;
+    background-color: #156064;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -26,9 +26,9 @@ body{
 
 
 p{
-    color: #65FDBD;
+    color: #00c49a;
     font-family: Plus Jakarta Sans;
-    font-size: 48px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 3rem;

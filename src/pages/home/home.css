@@ -3,7 +3,7 @@
 
 
 body{
-    background-color: #424F55;
+    background-color: #156064;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -15,7 +15,7 @@ body{
 
 
 h1{
-    color: #65FDBD;
+    color: #00c49a;
     font-family: Circula;
     font-size: 4rem;
     font-style: normal;
@@ -42,7 +42,7 @@ h1{
     width: 32rem;
     height: auto;
     border-radius: 1.25rem;
-    background: rgba(101, 253, 189, 0.20);
+    background: #037971;
     box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -92,7 +92,7 @@ input{
     align-items: flex-start;
     gap: 8px;
     border-radius: 4px;
-    border: 1px solid #65FDBD;
+    border: 1px solid #FFF0B3;
     background-color: rgba(101, 253, 189, 0.20);
     color: #FFFfff;
     font-size: 16px;
@@ -113,7 +113,7 @@ input{
     display: flex;
     border: none;
     border-radius: 20px;
-    background: #65FDBD;
+    background: #f8e16c;
     width: 106px;
     height: 40px;
     justify-content: center;
@@ -187,7 +187,7 @@ input{
 
 .error_entry-points_links{
     text-decoration: underline;
-    color: #FF8944;
+    color: #f4989c;
     cursor: pointer;
 
 }
